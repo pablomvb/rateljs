@@ -1,0 +1,11 @@
+<RCC>
+    <qresource prefix="/">
+        <file>init.js</file>
+        <file>media/go-next.png</file>
+        <file>media/go-previous.png</file>
+        <file>media/nav-up.svg</file>
+        <file>media/nav-update.svg</file>
+        <file>media/nav-back.svg</file>
+        <file>media/nav-forward.svg</file>
+    </qresource>
+</RCC>

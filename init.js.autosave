@@ -1,0 +1,16 @@
+(function(){
+    console.log = function()
+    {
+        var list = [];
+        
+        
+    }
+})()
+
+
+function vreturn(arg)
+{
+    if( typeof arg === 'object' ) return JSON.stringify(arg);
+
+    return arg;
+}

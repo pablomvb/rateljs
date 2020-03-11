@@ -1,0 +1,6 @@
+https://code.qt.io/cgit/qt/qtwebkit.git/commit/?h=5.9.0
+
+https://doc.qt.io/qt-5/qwebenginepage.html#runJavaScript-1
+https://stackoverflow.com/questions/34693830/qwebengine-how-to-get-attribute-value
+
+https://doc.qt.io/qt-5/qtwebenginewidgets-qtwebkitportingguide.html#unavailable-qt-webkit-apis

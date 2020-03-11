@@ -1,0 +1,39 @@
+ratel:
+    args(): string list
+    setInterval(int,function): ref
+    clearInterval(ref)
+    setTimeout(int,function): ref
+    clearTimeout(ref)
+    snippet(string): string
+    exit(int)
+    
+browser:
+    newTab(): ref
+    settings(): ref
+    setting(string): string
+
+tab:
+    tabID: int - set,get
+    url: string - get
+    title: string - get
+    onLoadFinished: function - set,get
+    navigationLocked: bool - set,get
+    onNavigationRequested: function - set,get
+    window: ref - get
+    onWindowClose: function - set,get
+    - - -
+    open(string,function)
+    evaluate(string)
+    
+tabwindow:
+    title: string - set,get
+    autoUpdateTitle: bool - set,get
+    - - -
+    windowClose()
+    open()
+    close()
+    pageNull() ---> clearPage();
+    
+console:
+    log(string)
+    

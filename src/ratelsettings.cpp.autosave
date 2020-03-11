@@ -1,0 +1,31 @@
+#include "ratelsettings.h"
+
+RatelSettings::RatelSettings()
+{
+    
+}
+
+QString RatelSettings::scriptFileName() const
+{
+    return m_jsFileName;
+}
+
+QString RatelSettings::script() const
+{
+    return m_jsFileData;
+}
+
+QString &RatelSettings::snippet(const QString &key) const
+{
+    return *m_jsSnippets.value( key, new QString() );
+}
+
+QStringList RatelSettings::snippetKeyList() const
+{
+    return m_jsSnippets.keys();
+}
+
+int RatelSettings::timeout() const
+{
+    return m_appTimeout;
+}

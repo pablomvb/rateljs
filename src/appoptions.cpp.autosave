@@ -1,0 +1,31 @@
+#include "appoptions.h"
+
+AppOptions::AppOptions()
+{
+    
+}
+
+QString AppOptions::scriptFileName() const
+{
+    return m_jsFileName;
+}
+
+QString AppOptions::script() const
+{
+    return m_jsFileData;
+}
+
+QString &AppOptions::scriptSnippet(const QString &key) const
+{
+    return *m_jsSnippets.value( key, new QString() );
+}
+
+QStringList AppOptions::snippetKeyList() const
+{
+    return m_jsSnippets.keys();
+}
+
+int AppOptions::timeout() const
+{
+    return m_appTimeout;
+}
