@@ -6,9 +6,6 @@
 
 class RatelOptions
 {
-    QString m_fileName;
-    QString m_script;
-    QMap<QString,QString*> m_scriptSnippets;
     int m_timeout;
 
     bool m_printHelp;

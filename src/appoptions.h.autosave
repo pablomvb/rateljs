@@ -6,21 +6,12 @@
 
 class AppOptions
 {
-    QString m_jsFileName;
-    QString m_jsFileData;
-    QMap<QString,QString*> m_jsSnippets;
-
     int m_appTimeout;
 
 public:
     AppOptions();
 
-    QString scriptFileName() const;
-    QString script() const;
-    QString& scriptSnippet(const QString& key) const;
-    QStringList snippetKeyList() const;
     int timeout() const;
-
 };
 
 #endif // RATELSETTINGS_H

@@ -18,7 +18,6 @@ CONFIG(release, debug|release):DEFINES += QT_NO_DEBUG_OUTPUT
 #DEFINES += QT_DISABLE_DEPRECATED_BEFORE=0x060000    # disables all the APIs deprecated before Qt 6.0.0
 
 SOURCES += \
-    src/appoptions.cpp \
         src/main.cpp \
     src/jsbrowserui.cpp \
     src/jseditor.cpp \
@@ -26,7 +25,9 @@ SOURCES += \
     src/browsertab.cpp \
     src/browser.cpp \
     src/browserwindow.cpp \
+    src/options.cpp \
     src/rateloptions.cpp \
+    src/script.cpp \
     src/settingsreader.cpp \
     src/webpage.cpp \
     src/ratel.cpp \
@@ -44,14 +45,15 @@ FORMS += \
     ui/jseditor.ui
 
 HEADERS += \
-    src/appoptions.h \
     src/jsbrowserui.h \
     src/jseditor.h \
     src/common.h \
     src/browsertab.h \
     src/browser.h \
     src/browserwindow.h \
+    src/options.h \
     src/rateloptions.h \
+    src/script.h \
     src/settingsreader.h \
     src/webpage.h \
     src/ratel.h \
